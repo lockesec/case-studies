@@ -12,11 +12,11 @@ on:
   schedule: [{cron: "17 6 * * 1"}]   # weekly: the sources and the MITRE data move
 permissions: {contents: read}
 env:   # the claim is "reproduced AT these commits"; bump by pull request
-  HIK: d276e8650fd39833194ed7f06af04cf9611e6f17
-  IS: 1cb468144e8247df42294129160e9376994cfdad
-  CRL: 7dc7757dfc343ad71eedb8c2789488060cfd6ab9
-  PG: d49f50583ae47d9fb932b480ba07e29a5d7c53ab
-  IDL: 97c6581b55c2d3619a1674da447ddfe788c407e2
+  HIK: 91bbed2f1d1264a27fc26f5636bb9d3bb43ccc6f
+  IS: 28489a36bb7fc901589d1fed9970a474b20bfac6
+  CRL: f0a9ed8025dfcb57cc9be7fee97c02e8025a4959
+  PG: 795739cd8c68f162ec3908923cd7b3650dbba27b
+  IDL: ef637de79fe5adb0eb5dbdce7127d8bcea86ce33
   ATTACK_SHA: 81113ba98afa2928f3dcff62022539f7ce30c315c32e14422f11ff95ce534352
   ATLAS_SHA: 935efa93e28294432d3e2f537eb94991ef8d1f8c58341cd360ea3321ddb66688
 jobs:

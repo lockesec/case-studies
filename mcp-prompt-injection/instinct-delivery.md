@@ -17,12 +17,12 @@ texts are verbatim.** CVE-2025-53773 (Copilot writing `chat.tools.autoApprove` i
 `.vscode/settings.json`) published no payload text, so only that write is replayed.
 
 The rules are the `agent-security` pack shipped with instinct-delivery
-(`examples/packs/agent-security/`), nine rules, each with its own test cases (91 in all: every
+(`examples/packs/agent-security/`), twelve rules, each with its own test cases (151 in all: every
 rule has cases that must fire and cases that must stay silent):
 
 ```console
 $ instinct-delivery test --rules-dir examples/packs/agent-security
-test: 9 rule(s) with tests: 91 case(s), 91 pass, 0 fail; 0 rule(s) without tests
+test: 12 rule(s) with tests: 151 case(s), 151 pass, 0 fail; 0 rule(s) without tests
 $ instinct-delivery replay agent-flows.jsonl --rules-dir examples/packs/agent-security
 replay: 22 replayed of 37 row(s); skipped 15 (no_tool_call 15)
 ```
@@ -81,6 +81,6 @@ instinct-delivery test --rules-dir "$ID/examples/packs/agent-security"
 instinct-delivery replay agent-flows.jsonl --rules-dir "$ID/examples/packs/agent-security"
 ```
 
-The first must report `91 pass, 0 fail`; the second must show the deliveries in the table above
+The first must report `151 pass, 0 fail`; the second must show the deliveries in the table above
 and none in a benign session. `reproduce.sh` checks both (claims D1 and D2) when `ID` points at
 an instinct-delivery checkout.

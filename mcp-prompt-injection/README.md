@@ -119,7 +119,7 @@ and `curl | sh`. The GitHub flow and the poisoned `add` call itself get nothing,
 | I4 | the benign twins: 0 findings of 3 files | injection-screen |
 | I5, I6 | as a hook: a warning to the model on the ticket, none on the benign ticket | `injection-screen hook run` |
 | I7 | a rug pull from a pinned benign description is named | `injection-screen tools check` |
-| D1 | the agent-security pack: 91 cases pass | instinct-delivery `test` |
+| D1 | the agent-security pack: 151 cases pass | instinct-delivery `test` |
 | D2 | replayed flows: 6 of 22 calls warned, all in attack sessions, 0 in benign twins | instinct-delivery `replay` |
 | C1 | the report passes with one independent source behind the demonstration | cti-report-lint |
 | A1 | 9 mapping lines (6 distinct ATLAS ids) in the release; the CS0054 five in MITRE's own mapping | check_atlas.py |

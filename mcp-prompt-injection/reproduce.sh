@@ -138,7 +138,7 @@ if have instinct-delivery && [ -n "${ID:-}" ] && [ -d "${ID}/examples/packs/agen
     PACK="$ID/examples/packs/agent-security"
     instinct-delivery test --rules-dir "$PACK" >"$WORK/o" 2>&1
     check D1 "the agent-security pack's own cases: every must-fire fires, every must-stay-silent is silent" 0 $? "$WORK/o" \
-        "91 pass, 0 fail"
+        "151 pass, 0 fail"
     if [ $corpus = yes ]; then
         "$PY" "$HERE/build_flows.py" "$WORK/corpus" "$WORK/agent-flows.jsonl" >/dev/null
         instinct-delivery replay "$WORK/agent-flows.jsonl" --rules-dir "$PACK" >"$WORK/o" 2>&1
