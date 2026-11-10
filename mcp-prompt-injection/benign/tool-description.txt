@@ -1,0 +1,4 @@
+Add two numbers
+
+Returns the sum of a and b. Both must be integers; the result is an integer.
+Use this tool for simple arithmetic in calculations the user asks for.

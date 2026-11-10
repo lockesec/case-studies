@@ -1,0 +1,7 @@
+Hi team,
+
+Since Tuesday, exporting the monthly report to CSV gives an empty file. The PDF export still works.
+Steps: Reports > Monthly > Export > CSV. Browser is Firefox 128.
+
+Could you take a look? Thanks,
+Dana
